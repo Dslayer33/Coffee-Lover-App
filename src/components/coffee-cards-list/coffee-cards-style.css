@@ -1,0 +1,166 @@
+
+
+.coffee-cards-box {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: repeat(9,1fr);
+   gap: 2rem;
+   margin-top: 2rem;
+}
+
+.coffee-card-item {
+   height: 40rem;
+   background-color: #d7dedc;
+   border: none;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.coffee-card-img {
+   width: 100%;
+   height: 20rem;
+   border-top: 5px solid #563440;
+   border-bottom: 5px solid #563440;
+}
+
+.ribbon-block {
+   width: 20rem;
+   height: 10rem;
+   align-self: center;
+} 
+
+
+.block-content {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.ribbon-container {
+   position: absolute;
+   height: 5rem;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-180%);
+}
+
+.coffee-card-ribbon {
+   width: 14rem;
+   height: 5rem;
+   margin: 100px auto 0px;
+   position: relative;
+   color: #d7dedc;
+   text-align: center;
+   text-transform: uppercase;
+   background-color: #563440;
+   cursor: pointer;
+   transition: all .2s;
+   
+  
+   
+   -webkit-animation: main 250ms;
+   -moz-animation: main 250ms;
+   -ms-animation: main 250ms;
+   animation: main 250ms;
+ }
+
+ .coffee-card-ribbon:hover {
+    top: -2px;
+ }
+
+ 
+
+ .ribbon-text {
+    letter-spacing: 0.65rem;
+    font: 20px/70px sans-serif;
+ }
+
+ .coffee-card-ribbon i {
+   position: absolute;
+ }
+
+
+ .coffee-card-ribbon i:first-child, .coffee-card-ribbon i:nth-child(2) {
+   position: absolute;
+   left: -20px;
+   bottom: -20px;
+   z-index: -1;
+   border: 20px solid transparent;
+   border-right-color: #552435;
+   
+   -webkit-animation: edge 500ms;
+   -moz-animation: edge 500ms;
+   -ms-animation: edge 500ms;
+   animation: edge 500ms;
+ }
+
+
+ .coffee-card-ribbon i:nth-child(2) {
+   left: auto;
+   right: -20px;
+   border-right-color: transparent;
+   border-left-color: #552435;
+ }
+
+ .coffee-card-ribbon i:nth-child(3), .coffee-card-ribbon i:last-child {
+   width: 20px;
+   bottom: -20px;
+   left: -60px;
+   z-index: -2;
+   border: 30px solid #251017;
+   border-left-color: transparent;
+   
+   -webkit-animation: back 600ms;
+   -moz-animation: back 600ms;
+   -ms-animation: back 600ms;
+   animation: back 600ms;
+   
+   -webkit-transform-origin: 100% 0;
+   -moz-transform-origin: 100% 0;
+   -ms-transform-origin: 100% 0;
+   transform-origin: 100% 0;
+ }
+
+
+ .coffee-card-ribbon i:last-child {
+   bottom: -20px;
+   left: auto;
+   right: -60px;
+   border: 30px solid #251017;
+   border-right-color: transparent;
+ 
+   -webkit-transform-origin: 0 0;
+   -moz-transform-origin: 0 0;
+   -ms-transform-origin: 0 0;
+   transform-origin: 0 0;
+ }
+
+
+ .modal-window-container {
+   display: none;
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   background: rgba(124, 58, 83, 0.5);
+   backdrop-filter: blur(5px);
+}
+
+.modal-window-block {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.window-content {
+   width: 30rem;
+   height: 100vh;
+   background-color: #310b18;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
