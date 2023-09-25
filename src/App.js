@@ -3,6 +3,7 @@ import {Component} from 'react';
 import CardList from './components/coffee-cards-list/coffee-card-item';
 import Searchbar from './components/search-input/search-input-module';
 import CoffeeTitle from './components/coffee-title/coffee-title-module';
+import CoffeeFooter from './components/footer/coffee-lover-footer';
 //import onClickRibbon from './components/card-recipe-module/card-recipe-module';
 import './App.css';
 
@@ -260,6 +261,9 @@ class  App extends Component {
           
 
           <CardList coffeeLover={filteredCoffee} />
+
+
+          <CoffeeFooter />
       </div>
     );
   }

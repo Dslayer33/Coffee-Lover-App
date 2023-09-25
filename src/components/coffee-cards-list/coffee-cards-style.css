@@ -18,6 +18,10 @@
    justify-content: space-around;
 }
 
+.coffee-card-title {
+   font-size: 1.5rem;
+}
+
 .coffee-card-img {
    width: 100%;
    height: 20rem;

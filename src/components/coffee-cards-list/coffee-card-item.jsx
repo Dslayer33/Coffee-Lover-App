@@ -81,7 +81,7 @@ class CardList extends Component {
                 <div className="coffee-cards-box">
                    {coffeeLover.map((cup) => (
                      <div key={cup.blockid} className="coffee-card-item">
-                      <h2 key={cup.id}>{cup.name}</h2>
+                      <h2 className="coffee-card-title" key={cup.id}>{cup.name}</h2>
 
                
                       <img src={cup.cardimg} className="coffee-card-img" alt="coffee-img"></img>

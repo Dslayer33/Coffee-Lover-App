@@ -1,0 +1,31 @@
+.coffee-footer {
+    margin-top: 4rem;
+    width: 100%;
+    height: 15rem;
+    background-color: #d7dedc;
+    position: relative;
+}
+
+.footer-content-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+.footer-link {
+    font-size: 1.5rem;
+}
+
+.footer-author {
+    font-weight: 800;
+    color: #341520;
+}
