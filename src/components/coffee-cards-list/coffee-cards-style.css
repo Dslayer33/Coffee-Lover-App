@@ -8,6 +8,20 @@
    margin-top: 2rem;
 }
 
+@media screen and (max-width:800px) {
+   .coffee-cards-box.coffee-cards-box.coffee-cards-box {
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(27,1fr);
+   }
+}
+
+@media screen and (max-width:1200px) {
+   .coffee-cards-box.coffee-cards-box {
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(14,1fr);
+   }
+}
+
 .coffee-card-item {
    height: 40rem;
    background-color: #d7dedc;
@@ -16,6 +30,26 @@
    display: flex;
    flex-direction: column;
    justify-content: space-around;
+}
+
+@media screen and (max-width:350px) {
+   .coffee-card-item.coffee-card-item.coffee-card-item.coffee-card-item {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width:500px) {
+   .coffee-card-item.coffee-card-item.coffee-card-item {
+       width: 90%;
+   }
+}
+
+@media screen and (max-width:800px) {
+   .coffee-card-item.coffee-card-item {
+       width: 80%;
+       align-self: center;
+       justify-self: center;
+   }
 }
 
 .coffee-card-title {
@@ -41,6 +75,9 @@
    height: 100%;
    position: relative;
 }
+
+
+
 
 .ribbon-container {
    position: absolute;
@@ -68,6 +105,24 @@
    -moz-animation: main 250ms;
    -ms-animation: main 250ms;
    animation: main 250ms;
+ }
+
+ @media screen and (max-width:350px) {
+   .coffee-card-ribbon.coffee-card-ribbon.coffee-card-ribbon.coffee-card-ribbon {
+      border-radius: 1rem;
+   }
+ }
+
+ @media screen and (max-width:400px) {
+   .coffee-card-ribbon.coffee-card-ribbon.coffee-card-ribbon {
+      width: 10rem;
+   }
+ }
+
+ @media screen and (max-width:500px) {
+   .coffee-card-ribbon.coffee-card-ribbon {
+      width: 12rem;
+   }
  }
 
  .coffee-card-ribbon:hover {
@@ -142,6 +197,13 @@
  }
 
 
+ @media screen and (max-width:350px) {
+   .ribbon-tail.ribbon-tail {
+      display: none;
+   }
+ }
+
+
  .modal-window-container {
    display: none;
    position: fixed;
@@ -161,10 +223,29 @@
 }
 
 .window-content {
-   width: 30rem;
+   width: 40rem;
    height: 100vh;
    background-color: #310b18;
    position: absolute;
    left: 50%;
-   transform: translateX(-50%);
+   top: 50%;
+   transform: translate(-50%,-50%);
 }
+
+.window-text-block {
+   width: 100%;
+   height: 100%;
+}
+
+
+.window-text {
+   color: #d7dedc;
+   font-size: 2rem;
+}
+
+@media screen and (max-width:1250px) {
+   .window-text.window-text {
+      color: #d7dedc;
+      font-size: 1.5rem;
+   }
+};

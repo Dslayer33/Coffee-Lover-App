@@ -1,17 +1,21 @@
+import { Component } from 'react';
 import './card-recipe-style.css';
 
-let onClickRibbon;
 
-onClickRibbon = (event) => {
-    console.log(event.target);
 
-    return(
-        <div className="modal-window-container">
-            <div className="modal-window-block">
-                <div className="window-content"></div>
-            </div>
-        </div>
-    );
+  class cardContent1 extends Component  {
+
+   render(){
+      return(
+         <div>
+            <h1>Text1</h1>
+            <h2>Text2</h2>
+            <h3>Text3</h3>
+         </div>
+      );
+   }
+   
  };
+ 
 
- export default onClickRibbon;
+ export default cardContent1;
